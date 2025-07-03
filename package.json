@@ -30,7 +30,7 @@
     "@vueuse/nuxt": "13.2.0",
     "eslint": "9.30.0",
     "eslint-plugin-better-tailwindcss": "3.4.2",
-    "happy-dom": "17.4.7",
+    "happy-dom": "17.6.3",
     "lint-staged": "16.1.2",
     "nuxt": "3.17.5",
     "nuxt-auth-utils": "0.5.20",
@@ -40,7 +40,7 @@
     "stylelint": "16.21.0",
     "stylelint-config-recommended-vue": "1.6.1",
     "stylelint-config-standard": "38.0.0",
-    "vitest": "3.1.4",
+    "vitest": "3.2.4",
     "vue-tsc": "2.2.10"
   },
   "simple-git-hooks": {
