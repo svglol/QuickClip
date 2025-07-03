@@ -1,11 +1,19 @@
+import { z } from 'zod'
+
+const querySchema = z.object({
+  user: z.string().optional(),
+})
+
+const paramsSchema = z.object({
+  id: z.string().min(1, 'ID is required'),
+})
+
 export default defineEventHandler(async (event) => {
-  const id = getRouterParam(event, 'id')
-  if (!id) {
-    return 'No ID provided'
-  }
+  const query = await getValidatedQuery(event, querySchema.parse)
+  const params = await getValidatedRouterParams(event, paramsSchema.parse)
   try {
     const dataStorage = useStorage('data')
-    const data = await dataStorage.getItem(id) as ClipUrlObject | null
+    const data = await dataStorage.getItem(params.id) as ClipUrlObject | null
 
     if (!data) {
       return 'Not a valid ID, please try again.'
@@ -43,7 +51,7 @@ export default defineEventHandler(async (event) => {
         await $fetch(data.discordWebhook, {
           method: 'POST',
           body: {
-            content: `https://clips.twitch.tv/${clipData.id}\n [✏️ Edit Clip](<https://clips.twitch.tv/${clipData.id}/edit>)`,
+            content: `${query.user ? `${query.user} created a clip!\n` : ''}https://clips.twitch.tv/${clipData.id}\n [✏️ Edit Clip](<https://clips.twitch.tv/${clipData.id}/edit>)`,
           },
         })
       }

@@ -2,7 +2,9 @@
   <div class="flex min-h-screen flex-col items-center justify-between p-4">
     <div class="mx-auto flex w-full max-w-2xl flex-1 items-center">
       <div class="w-full">
-        <div v-if="!createdID" class="rounded-lg bg-(--ui-bg-muted) p-6 shadow-lg">
+        <div
+          v-if="!createdID" class="rounded-lg bg-(--ui-bg-muted) p-6 shadow-lg"
+        >
           <div class="mb-6 text-center">
             <h2 class="items-center text-2xl font-bold text-(--ui-text)">
               <UIcon name="solar:paperclip-2-bold" /> QuickClip
@@ -12,7 +14,9 @@
             </p>
           </div>
 
-          <UForm :schema="schema" :state="{ ...state, loggedIn }" class="space-y-6" @submit="onSubmit">
+          <UForm
+            :schema="schema" :state="{ ...state, loggedIn }" class="space-y-6" @submit="onSubmit"
+          >
             <UFormField label="Channel" description="The Twitch channel to create clips from" name="channel" required>
               <UInput v-model="state.channel" size="lg" class="w-full" />
             </UFormField>
@@ -22,7 +26,12 @@
             </UFormField>
 
             <UFormField label="Twitch Login" name="loggedIn" description="Twitch account to create the clips from" :required="true">
-              <div v-if="loggedIn" class="flex items-center justify-between rounded-lg border border-purple-600 bg-purple-500 p-2">
+              <div
+                v-if="loggedIn" class="
+                  flex items-center justify-between rounded-lg border
+                  border-purple-600 bg-purple-500 p-2
+                "
+              >
                 <span class="text-sm text-purple-200">Logged in as {{ user?.name }}</span>
                 <UButton size="sm" color="neutral" variant="soft" @click="clear">
                   Logout
@@ -52,26 +61,31 @@
               Clip Command for '{{ state.channel }}' has been successfully created.
             </p>
 
-            <div class="space-y-4 overflow-x-auto rounded-lg bg-(--ui-bg-accented) p-4 text-left font-mono text-sm text-(--ui-text-muted)">
+            <div
+              class="
+                space-y-4 overflow-x-auto rounded-lg bg-(--ui-bg-accented) p-4
+                text-left font-mono text-sm text-(--ui-text-muted)
+              "
+            >
               <div>
                 <span class="font-bold text-primary">URL</span><br>
                 <code>{{ `${$config.public.baseUrl}/api/clip-create/${createdID}` }}</code>
               </div>
               <div>
                 <span class="font-bold text-primary">Nightbot</span><br>
-                <code>$urlfetch {{ `${$config.public.baseUrl}/api/clip-create/${createdID}` }}</code>
+                <code>$urlfetch {{ `${$config.public.baseUrl}/api/clip-create/${createdID}?user=$(user)` }}</code>
               </div>
               <div>
                 <span class="font-bold text-primary">StreamElements Chatbot</span><br>
-                <code>${customapi.{{ `${$config.public.baseUrl}/api/clip-create/${createdID}` }}}</code>
+                <code>${customapi.{{ `${$config.public.baseUrl}/api/clip-create/${createdID}?user=$(user)` }}}</code>
               </div>
               <div>
                 <span class="font-bold text-primary">StreamLabs Cloudbot</span><br>
-                <code>{readapi.{{ `${$config.public.baseUrl}/api/clip-create/${createdID}` }}}</code>
+                <code>{readapi.{{ `${$config.public.baseUrl}/api/clip-create/${createdID}?user=$username` }}}</code>
               </div>
               <div>
                 <span class="font-bold text-primary">Fossabot</span><br>
-                <code>${customapi {{ `${$config.public.baseUrl}/api/clip-create/${createdID}` }}}</code>
+                <code>${customapi {{ `${$config.public.baseUrl}/api/clip-create/${createdID}?user=$(user)` }}}</code>
               </div>
             </div>
 
@@ -84,7 +98,12 @@
     </div>
 
     <footer class="mt-8 text-center text-sm text-(--ui-text-muted)">
-      Built by svglol – <a href="https://github.com/svglol/quickclip" target="_blank" class="underline hover:text-primary">View on GitHub</a>
+      Built by svglol – <a
+        href="https://github.com/svglol/quickclip" target="_blank" class="
+          underline
+          hover:text-primary
+        "
+      >View on GitHub</a>
     </footer>
   </div>
 </template>
