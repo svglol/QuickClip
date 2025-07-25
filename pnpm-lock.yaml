@@ -48,8 +48,8 @@ importers:
         specifier: 9.31.0
         version: 9.31.0(jiti@2.4.2)
       eslint-plugin-better-tailwindcss:
-        specifier: 3.7.0
-        version: 3.7.0(eslint@9.31.0(jiti@2.4.2))(tailwindcss@4.1.11)
+        specifier: 3.7.1
+        version: 3.7.1(eslint@9.31.0(jiti@2.4.2))(tailwindcss@4.1.11)
       happy-dom:
         specifier: 18.0.1
         version: 18.0.1
@@ -785,8 +785,8 @@ packages:
     resolution: {integrity: sha512-bkOp+iumZCCbt1K1CmWf0R9pM5yKpDv+ZXtvSyQpudrI9kuFLp+bM2WOPXImuD/ceQuaa8f5pj93Y7zyECIGNA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@eslint/css-tree@3.6.1':
-    resolution: {integrity: sha512-5DIsBME23tUQD5zHD+T38lC2DG4jB8x8JRa+yDncLne2TIZA0VuCpcSazOX1EC+sM/q8w24qeevXfmfsIxAeqA==}
+  '@eslint/css-tree@3.6.2':
+    resolution: {integrity: sha512-ttB4VQguJdWxPVfX/6xB0ugWVeTe6I3nv9izeR+xPcQbtFVb3lhKbcTScWTXZu+OF0PLoLavX7zBiYtLwnlB9w==}
     engines: {node: ^10 || ^12.20.0 || ^14.13.0 || >=15.0.0}
 
   '@eslint/eslintrc@3.3.1':
@@ -1428,6 +1428,10 @@ packages:
 
   '@pkgr/core@0.2.7':
     resolution: {integrity: sha512-YLT9Zo3oNPJoBjBc4q8G2mjU4tqIbf5CEOORbUUr48dCD9q3umJ3IPlVqOqDakPfd2HuwccBaqlGhN4Gmr5OWg==}
+    engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
+
+  '@pkgr/core@0.2.9':
+    resolution: {integrity: sha512-QNqXyfVS2wm9hweSYD2O7F0G06uurj9kZ96TRQE5Y9hU7+tgdZwIkbAKc5Ocy1HxEY2kuDQa6cQ1WRs/O5LFKA==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
 
   '@polka/url@1.0.0-next.29':
@@ -3436,8 +3440,8 @@ packages:
     peerDependencies:
       eslint: '*'
 
-  eslint-plugin-better-tailwindcss@3.7.0:
-    resolution: {integrity: sha512-8xMy1h3v5X9m9r1E6bNc49WOYYcxk6ld+67UJOz9gFZ48BzG8KR430nrGkZbWNhbQTR5i0f2c3mtLgQbVXWZkA==}
+  eslint-plugin-better-tailwindcss@3.7.1:
+    resolution: {integrity: sha512-ROTCf93dM9PcSiXVxXpfN/CK8WTAwjImi//c1DUjBfgRbMyXjkp5JPy/CAf+gJIElzSPkDPvMaFrg08NtXJ1Qg==}
     engines: {node: ^20.11.0 || >=21.2.0}
     peerDependencies:
       eslint: ^7.0.0 || ^8.0.0 || ^9.0.0
@@ -5850,6 +5854,10 @@ packages:
     engines: {node: '>=14.0.0'}
     hasBin: true
 
+  synckit@0.11.11:
+    resolution: {integrity: sha512-MeQTA1r0litLUf0Rp/iisCaL8761lKAZHaimlbGK4j0HysC4PLfqygQj9srcs0m2RdtDYnF8UuYyKpbjHYp7Jw==}
+    engines: {node: ^14.18.0 || >=16.0.0}
+
   synckit@0.11.8:
     resolution: {integrity: sha512-+XZ+r1XGIJGeQk3VvXhT6xx/VpbHsRzsTkGgF6E5RX9TTXD0118l87puaEBZ566FhqblC6U0d4XnubznJDm30A==}
     engines: {node: ^14.18.0 || >=16.0.0}
@@ -7304,7 +7312,7 @@ snapshots:
     dependencies:
       '@types/json-schema': 7.0.15
 
-  '@eslint/css-tree@3.6.1':
+  '@eslint/css-tree@3.6.2':
     dependencies:
       mdn-data: 2.21.0
       source-map-js: 1.2.1
@@ -8315,6 +8323,8 @@ snapshots:
     optional: true
 
   '@pkgr/core@0.2.7': {}
+
+  '@pkgr/core@0.2.9': {}
 
   '@polka/url@1.0.0-next.29': {}
 
@@ -10441,15 +10451,15 @@ snapshots:
     dependencies:
       eslint: 9.31.0(jiti@2.4.2)
 
-  eslint-plugin-better-tailwindcss@3.7.0(eslint@9.31.0(jiti@2.4.2))(tailwindcss@4.1.11):
+  eslint-plugin-better-tailwindcss@3.7.1(eslint@9.31.0(jiti@2.4.2))(tailwindcss@4.1.11):
     dependencies:
-      '@eslint/css-tree': 3.6.1
+      '@eslint/css-tree': 3.6.2
       enhanced-resolve: 5.18.2
       eslint: 9.31.0(jiti@2.4.2)
       jiti: 2.4.2
       postcss: 8.5.6
       postcss-import: 16.1.1(postcss@8.5.6)
-      synckit: 0.11.8
+      synckit: 0.11.11
       tailwind-csstree: 0.1.1
       tailwindcss: 4.1.11
       tsconfig-paths-webpack-plugin: 4.2.0
@@ -13349,6 +13359,10 @@ snapshots:
       css-what: 6.2.2
       csso: 5.0.5
       picocolors: 1.1.1
+
+  synckit@0.11.11:
+    dependencies:
+      '@pkgr/core': 0.2.9
 
   synckit@0.11.8:
     dependencies:
