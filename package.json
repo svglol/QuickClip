@@ -33,7 +33,7 @@
     "happy-dom": "18.0.1",
     "lint-staged": "16.1.2",
     "nuxt": "3.18.0",
-    "nuxt-auth-utils": "0.5.20",
+    "nuxt-auth-utils": "0.5.22",
     "playwright-core": "1.54.1",
     "postcss-html": "1.8.0",
     "simple-git-hooks": "2.13.0",
