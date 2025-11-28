@@ -34,7 +34,7 @@
     "lint-staged": "16.2.7",
     "nuxt": "3.20.0",
     "nuxt-auth-utils": "0.5.25",
-    "playwright-core": "1.56.1",
+    "playwright-core": "1.57.0",
     "postcss-html": "1.8.0",
     "simple-git-hooks": "2.13.1",
     "stylelint": "16.26.0",
