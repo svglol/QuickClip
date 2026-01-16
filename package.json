@@ -35,7 +35,7 @@
     "nuxt": "3.20.2",
     "nuxt-auth-utils": "0.5.25",
     "playwright-core": "1.57.0",
-    "postcss-html": "1.8.0",
+    "postcss-html": "1.8.1",
     "simple-git-hooks": "2.13.1",
     "stylelint": "16.26.1",
     "stylelint-config-recommended-vue": "1.6.1",
