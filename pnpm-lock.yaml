@@ -66,8 +66,8 @@ importers:
         specifier: 1.57.0
         version: 1.57.0
       postcss-html:
-        specifier: 1.8.0
-        version: 1.8.0
+        specifier: 1.8.1
+        version: 1.8.1
       simple-git-hooks:
         specifier: 2.13.1
         version: 2.13.1
@@ -76,7 +76,7 @@ importers:
         version: 16.26.1(typescript@5.9.2)
       stylelint-config-recommended-vue:
         specifier: 1.6.1
-        version: 1.6.1(postcss-html@1.8.0)(stylelint@16.26.1(typescript@5.9.2))
+        version: 1.6.1(postcss-html@1.8.1)(stylelint@16.26.1(typescript@5.9.2))
       stylelint-config-standard:
         specifier: 38.0.0
         version: 38.0.0(stylelint@16.26.1(typescript@5.9.2))
@@ -5764,8 +5764,8 @@ packages:
     peerDependencies:
       postcss: ^8.4.32
 
-  postcss-html@1.8.0:
-    resolution: {integrity: sha512-5mMeb1TgLWoRKxZ0Xh9RZDfwUUIqRrcxO2uXO+Ezl1N5lqpCiSU5Gk6+1kZediBfBHFtPCdopr2UZ2SgUsKcgQ==}
+  postcss-html@1.8.1:
+    resolution: {integrity: sha512-OLF6P7qctfAWayOhLpcVnTGqVeJzu2W3WpIYelfz2+JV5oGxfkcEvweN9U4XpeqE0P98dcD9ssusGwlF0TK0uQ==}
     engines: {node: ^12 || >=14}
 
   postcss-import@16.1.1:
@@ -14170,7 +14170,7 @@ snapshots:
     dependencies:
       postcss: 8.5.6
 
-  postcss-html@1.8.0:
+  postcss-html@1.8.1:
     dependencies:
       htmlparser2: 8.0.2
       js-tokens: 9.0.1
@@ -14814,17 +14814,17 @@ snapshots:
       postcss: 8.5.6
       postcss-selector-parser: 7.1.0
 
-  stylelint-config-html@1.1.0(postcss-html@1.8.0)(stylelint@16.26.1(typescript@5.9.2)):
+  stylelint-config-html@1.1.0(postcss-html@1.8.1)(stylelint@16.26.1(typescript@5.9.2)):
     dependencies:
-      postcss-html: 1.8.0
+      postcss-html: 1.8.1
       stylelint: 16.26.1(typescript@5.9.2)
 
-  stylelint-config-recommended-vue@1.6.1(postcss-html@1.8.0)(stylelint@16.26.1(typescript@5.9.2)):
+  stylelint-config-recommended-vue@1.6.1(postcss-html@1.8.1)(stylelint@16.26.1(typescript@5.9.2)):
     dependencies:
-      postcss-html: 1.8.0
+      postcss-html: 1.8.1
       semver: 7.7.2
       stylelint: 16.26.1(typescript@5.9.2)
-      stylelint-config-html: 1.1.0(postcss-html@1.8.0)(stylelint@16.26.1(typescript@5.9.2))
+      stylelint-config-html: 1.1.0(postcss-html@1.8.1)(stylelint@16.26.1(typescript@5.9.2))
       stylelint-config-recommended: 17.0.0(stylelint@16.26.1(typescript@5.9.2))
 
   stylelint-config-recommended@16.0.0(stylelint@16.26.1(typescript@5.9.2)):
